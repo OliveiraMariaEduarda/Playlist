@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+
+@font-face {
+    font-family: Charlotte;
+    src: url(fonte/Charlotte.otf);
+  }
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(fonte/CaviarDreams.ttf);
+  }
+
+@font-face {
+    font-family: LEMONMILK;
+    src: url(fonte/LEMONMILK-Regular.otf);
+  }
+
+  @font-face {
+    font-family: Nesans;
+    src: url(fonte/Nesans.ttf);
+  }
+
+  @font-face {
+    font-family: Rounded_Elegance;
+    src: url(fonte/Rounded_Elegance.ttf);
+  }
+
+*{
+    box-sizing: border-box;
+}
+
+.team-section{
+    background-image: linear-gradient( to bottom right, #e92efb, #ff2079, #440bd4, #04005e);
+    min-height: 100vh;
+    padding: 70px 15px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-section .section-title{
+    flex-basis: 100%;
+    max-width: 100%;
+    margin-bottom: 70px;
+}
+
+.team-section .section-title h1{
+    font-size: 80px;
+    text-align:center ;
+    margin: 0;
+    color:white;
+    font-family:Charlotte ;
+
+}
+
+.team-section .section-title p{
+    font-size: 16px;
+    text-align: center;
+    margin: 15px 0 0;
+    color: white;
+    font-family: CaviarDreams ;
+}
+
+.team-section .team-items{
+    flex-basis: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-section .team-items .item{
+    flex-basis: calc(33% - 50px);
+    max-width: calc(33% - 50px);
+    transform: translateY(-20px);
+    margin: 15px;
+}
+
+.team-section .team-items .item:hover{
+    transform: translateY(-10px);
+}
+
+.team-section .team-items .item img{
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.team-section .team-items .item .inner{
+    position: relative;
+    z-index: 11;
+    padding:0 15px;
+}
+
+.team-section .team-items .item .inner .info{
+    background-color: white;
+    opacity: 70%;
+    text-align: center;
+    padding: 20px 15px;
+    border-radius: 8px;
+    transition: all .5s ease;
+    margin-top: -40px;
+}
+
+.team-section .team-items .item:hover .inner .info{
+    transform: translateY(-20px);
+}
+
+.team-section .team-items .item .inner .info h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color:#ff2079 ;
+    font-family: LEMONMILK;
+}
+
+.team-section .team-items .item .inner .info p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #440bd4;
+    margin: 10px 0 0;
+    font-family: CaviarDreams ;
+    font-weight: bold;
+}
+
+@media(max-width: 991px){
+    .team-section .team-items .item{
+        flex-basis: calc(25% - 30px);
+        max-width: calc(25% - 30px);
+        margin-bottom: 30px;
+    }
+}

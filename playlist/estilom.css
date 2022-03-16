@@ -1,0 +1,66 @@
+body{
+    background-image: linear-gradient( to bottom right, #550bec, #a12626);
+}
+
+
+.video{
+    width: 700px;
+    height: 900px;
+    float: left;
+    margin: 5px;
+    padding: 20px;
+}
+
+.video iframe{
+    margin-top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.letra{
+    width: 250px;
+    height: 900px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+.letra h1{
+    font-family: LEMONMILK;
+    color: white;
+}
+
+.letra p{
+    font-family: CaviarDreams;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.904);
+    font-size: small;
+}
+
+.button{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    background: #ffffff46;
+    border: solid  white ;
+    border-radius: 8px;
+}
+
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(fonte/CaviarDreams.ttf);
+  }
+
+  @font-face {
+    font-family: Charlotte;
+    src: url(fonte/Charlotte.otf);
+  }
+
+  @font-face {
+    font-family: LEMONMILK;
+    src: url(fonte/LEMONMILK-Regular.otf);
+  }
